@@ -100,6 +100,7 @@ main {
     height: 600px;
     max-height: 80vh;
     overflow-y: auto;
+    position: relative;
 }
 
 .title-container, .rating-container, .message {
@@ -150,6 +151,12 @@ main {
     margin-top: 20px;
 }
 
+.rating-explanation {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+}
+
 .rewards-container {
     display: flex;
     justify-content: center;
@@ -176,9 +183,20 @@ main {
     transform: scale(1.2);
 }
 
-#message {
+#message, #thank-you-message {
     font-size: 1.2em;
     margin-top: 20px;
+}
+
+.content-wrapper #thank-you-message {
+    position: absolute;
+    bottom: 100px;
+    left: auto;
+    right: auto;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
 }
 
 footer {
