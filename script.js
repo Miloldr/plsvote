@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const endTime = new Date().getTime();
         const timeTaken = (endTime - startTime) / 1000;
         if (timeTaken < 1) {
-            messageDiv.textContent = "Prašome žaisti sąžiningai ir neskubėti!";
+            messageDiv.textContent = "Prašome vertinti sąžiningai ir neskubėti!";
             showElement(messageDiv);
             hideElement(titleContainer);
             setTimeout(() => {
