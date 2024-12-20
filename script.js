@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showRating() {
-        messageDiv.innerHTML = `Įvertinkite pasirinktą pavadinimą: <span id="chosen-title">${chosenTitle}</span>`;
+        messageDiv.innerHTML = `<button class="title-button" disabled>${chosenTitle}</button>`;
         showElement(messageDiv);
         createStars();
         showElement(ratingContainer);
@@ -178,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const endTime = new Date().getTime();
                 const timeTaken = (endTime - startTime) / 1000;
                 sendChoice(chosenTitle, timeTaken, selectedRating);
+                hideElement(ratingContainer);
             });
 
             star.addEventListener('mouseover', () => {
