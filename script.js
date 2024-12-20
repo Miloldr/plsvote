@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchTitles() {
-        fetch('http://localhost:5003/get_titles', {
+        fetch('https://5295-78-57-126-227.ngrok-free.app/get_titles', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function sendChoice(choice, timeTaken, rating) {
-        fetch('http://localhost:5003/submit_choice', {
+        fetch('https://5295-78-57-126-227.ngrok-free.app/submit_choice', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
