@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const goals = {
         10: {
             type: "background",
-            image: "/Users/simomac/Desktop/FlipperXweb/flips/bg.png",
+            image: "bg.png",
         },
         // 50: { type: "cookie", image: "https://w7.pngwing.com/pngs/964/816/png-transparent-chocolate-chip-cookie-fortune-cookie-biscuits-cookie-clicker-cookies-cartoon-food-baking-cooking-thumbnail.png" },
     };
