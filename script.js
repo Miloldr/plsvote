@@ -84,6 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
         messageDiv.innerHTML = `<button class="title-button" disabled>${chosenTitle}</button>`;
         showElement(messageDiv);
         createStars();
+        const ratingExplanation = document.createElement('p');
+        ratingExplanation.textContent = '1 žvaigždutė - niekada nespausčiau, o 5 - paspausčiau iš kart nesukęs galvos';
+        ratingExplanation.classList.add('rating-explanation');
+        ratingContainer.appendChild(ratingExplanation);
         showElement(ratingContainer);
     }
 
@@ -141,14 +145,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     hideElement(ratingContainer);
                     hideElement(titleContainer);
                 } else {
-                    messageDiv.textContent = 'Ačiū už atsiliepimą!';
+                    // messageDiv.textContent = 'Ačiū už atsiliepimą!';
                     showElement(messageDiv);
                     hideElement(ratingContainer);
                     checkGoals(data.combinations_rated);
+                    hideElement(messageDiv);
+                    const thankYouMessageDiv = document.getElementById('thank-you-message');
+                    thankYouMessageDiv.textContent = 'Ačiū už atsiliepimą!';
+                    showElement(thankYouMessageDiv);
                     setTimeout(() => {
-                        hideElement(messageDiv);
-                    }, 500);
-                    setTimeout(() => {
+                        hideElement(thankYouMessageDiv);
                         fetchTitles();
                     }, 1000);
                 }
