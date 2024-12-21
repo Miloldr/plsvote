@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Straipsnių Pavadinimų Analizė</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #3498db;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-    <div id="background-image-container" class="background-image-container"></div>
-    <header>
-        <h1>Straipsnių Pavadinimų Analizė</h1>
-        <p>Jūsų tikslas yra nuspręsti kuris iš 2 pateiktų pavadinimų atrodo geriau, kurį jūs skaitytumėte pirmiau. Išsirinkus įvertinti patį pavadinimą 1-5</p>
-        <p>Padėkite mums analizuoti, kurie straipsnio pavadinimai yra geresni! Jūs įvertinote <span id="combination-counter"></span>.</p>
-        <p>Įvertinkite 10 kombinacijų for a cookie</p>
-    </header>
-    <main>
-        <div class="content-wrapper">
-            <div id="title-container" class="title-container">
-            </div>
-            <div id="message" class="message"></div>
-            <div id="thank-you-message" class="message" style="display: none;"></div>
-            <div id="rating-container" class="rating-container"></div>
-            <div id="rewards-container" class="rewards-container">
-                <img id="cookie-reward" src="" alt="Cookie Reward" style="display: none;">
-            </div>
-        </div>
-    </main>
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>Ačiū už jūsų dalyvavimą!</h1>
+        <p>Balsavimas uždarytas. Mes dėkojame už jūsų laiką padedant mums analizuoti straipsnių pavadinimų poveikį.</p>
+    </div>
 </body>
-
 </html>
